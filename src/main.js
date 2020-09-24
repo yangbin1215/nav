@@ -18,7 +18,7 @@ const render = () => {
               </div>
           </li>`).insertBefore($lastLi);
         $li.on('click', () => {
-            window.open('https://' + item.url, '_self')
+            window.open('https://www.' + item.url, '_self')
         })
         $li.on('click', '.close', (e) => {
             e.stopPropagation();
@@ -57,7 +57,7 @@ $(document).on('keypress', (e) => {
     let {key} = e;
     for (let i=0;i<hashMap.length;i++){
         if (hashMap[i].url[0] === key){
-            window.open('https://' + hashMap[i].url, '_self');
+            window.open('https://www.' + hashMap[i].url, '_self');
             break;
         }
     }

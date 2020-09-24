@@ -27,7 +27,23 @@ img {
 
 /* style */
 body {
-    background: #eeeeee;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("/images/mobile_background.jpg");
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        background-image: url("/images/pc_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .global-header {
