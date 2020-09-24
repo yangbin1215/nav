@@ -1,0 +1,14 @@
+{
+  "name": "nav",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yangbin1215/nav.git",
+  "author": "yangbin <bin.yang@yiako.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+  }
+}

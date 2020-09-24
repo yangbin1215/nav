@@ -1,0 +1,183 @@
+/* reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* style */
+body {
+    background: #eeeeee;
+}
+
+.global-header {
+    margin: 20px;
+}
+
+@media (min-width: 500px) {
+    .global-header {
+        margin: 50px 0;
+    }
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .search-form {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .search-form {
+        max-width: 400px;
+    }
+}
+
+.search-form > input {
+    width: 100%;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-form > button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 0 28px;
+    color: white;
+    background: #409eff;
+    border-radius: 4px;
+}
+
+.global-main {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.global-footer {
+}
+
+.site-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .site-list {
+        margin: 0 20px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 500px) {
+    .site-list {
+        margin-left: 0;
+        margin-right: -25px;
+    }
+}
+
+.site-list > li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    .site-list > li {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.site-list .site {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border: #ddd solid 1px;
+    border-radius: 4px;
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.site-list .site > .logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+}
+
+.site-list .site > .link {
+    font-size: 16px;
+}
+
+.site-list .site > .close {
+    font-size: 20px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.site-list .add-button {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.site-list .add-button .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.site-list .add-button .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-list .add-button .text {
+    font-size: 16px;
+}
+
+
+/*# sourceMappingURL=style.5416df22.css.map */
