@@ -54,11 +54,13 @@ const removeRedundant = (url) => {
 };
 
 $(document).on('keypress', (e) => {
-    let {key} = e;
-    for (let i=0;i<hashMap.length;i++){
-        if (hashMap[i].url[0] === key){
-            window.open('https://www.' + hashMap[i].url, '_self');
-            break;
+    if (e.target !== $('input')[0]) {
+        let {key} = e;
+        for (let i = 0; i < hashMap.length; i++) {
+            if (hashMap[i].url[0] === key) {
+                window.open('https://www.' + hashMap[i].url, '_self');
+                break;
+            }
         }
     }
 })

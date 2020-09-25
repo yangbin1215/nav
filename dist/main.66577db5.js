@@ -164,14 +164,16 @@ var removeRedundant = function removeRedundant(url) {
 };
 
 $(document).on('keypress', function (e) {
-  var key = e.key;
+  if (e.target !== $('input')[0]) {
+    var key = e.key;
 
-  for (var i = 0; i < hashMap.length; i++) {
-    if (hashMap[i].url[0] === key) {
-      window.open('https://www.' + hashMap[i].url, '_self');
-      break;
+    for (var i = 0; i < hashMap.length; i++) {
+      if (hashMap[i].url[0] === key) {
+        window.open('https://www.' + hashMap[i].url, '_self');
+        break;
+      }
     }
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.6a60698c.js.map
+//# sourceMappingURL=main.66577db5.js.map
